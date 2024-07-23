@@ -1,0 +1,136 @@
+/* Estilos generales */
+body {
+    background-color: #1e1e1e; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor del formulario y tabla */
+.container {
+    display: flex;
+    gap: 20px; /* Espacio entre el formulario y la tabla */
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+/* Estilos del formulario */
+.formulario {
+    background-color: #333; /* Fondo del formulario */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); /* Sombra luminosa */
+    width: 400px; /* Ancho del formulario */
+    flex: 1; /* Para que el formulario ocupe el espacio necesario */
+}
+
+.formulario h1 {
+    color: #00ffdd; /* Título en color neón */
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: calc(100% - 22px); /* Ajuste del ancho para los márgenes */
+    padding: 10px;
+    border: 1px solid #00ffdd; /* Bordes neón */
+    border-radius: 5px;
+    background-color: #222; /* Fondo oscuro para campos */
+    color: #e0e0e0; /* Texto claro en campos */
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #ff00ff; /* Bordes morados al enfocar */
+}
+
+span {
+    display: block;
+    color: #ff3333; /* Mensajes de error en color rojo */
+    font-size: small;
+}
+
+button {
+    background-color: #00ffdd; /* Fondo neón para botones */
+    color: #000; /* Texto negro en botones */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff00ff; /* Cambio de color al pasar el ratón */
+    transform: scale(1.05); /* Efecto de ampliación */
+}
+
+/* Estilos de la tabla */
+.tabla {
+    background-color: #333; /* Fondo de la tabla */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); /* Sombra luminosa */
+    width: 100%; /* Ancho completo para la tabla */
+    flex: 2; /* Para que la tabla ocupe más espacio */
+    overflow-x: auto; /* Habilitar desplazamiento horizontal si es necesario */
+}
+
+.tabla h2 {
+    color: #00ffdd; /* Título en color neón */
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #00ffdd; /* Bordes neón para la tabla */
+}
+
+th {
+    background-color: #1a1a1a; /* Fondo oscuro para encabezados */
+    color: #00ffdd; /* Texto neón para encabezados */
+}
+
+tr:nth-child(even) {
+    background-color: #2a2a2a; /* Fondo alternante para filas */
+}
+
+tr:nth-child(odd) {
+    background-color: #1e1e1e; /* Fondo oscuro para filas impares */
+}
+
+button {
+    background-color: #00ffdd; /* Fondo neón para botones */
+    color: #000; /* Texto negro en botones */
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff00ff; /* Cambio de color al pasar el ratón */
+    transform: scale(1.1); /* Efecto de ampliación */
+}
